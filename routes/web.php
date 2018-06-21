@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/edit-info-user', 'UserController@update');
+
+Route::get('/user-list', 'UserController@list');
