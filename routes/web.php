@@ -22,3 +22,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/edit-info-user', 'UserController@update');
 
 Route::get('/user-list', 'UserController@list');
+
+Route::get('/user-edit/{id}', 'UserController@edit');
+
+Route::get('/show-profile/{id?}', function ($id) {
+    return 'User '.$id;
+});
+
+Route::get('/show-profile/{id?}', 'UserController@showProfile');
+
