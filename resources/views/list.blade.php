@@ -21,6 +21,10 @@
         <th>last name</th>
         <th>username</th>
         <th>Email</th>
+        <th>Location</th>
+        <th>Hobbies 1</th>
+        <th>Hobbies 2</th>
+        <th>Hobbies 3</th>
         <th>Created at</th>
     </tr>
     </thead>
@@ -34,6 +38,10 @@
             <td>{{ $user -> last_name }}</td>
             <td>{{ $user -> username }}</td>
             <td>{{ $user -> email }}</td>
+            <td>{{ $user -> location }}</td>
+            <td>{{ $user -> tag1 }}</td>
+            <td>{{ $user -> tag2 }}</td>
+            <td>{{ $user -> tag3 }}</td>
             <td>{{ $user -> created_at }}</td>
 
         </tr>

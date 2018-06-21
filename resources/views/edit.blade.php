@@ -48,42 +48,6 @@
         </div>
         <div class="row">
             <div class="col-md-4"></div>
-            <div class="form-group col-md-4" style="margin-left:38px">
-                <label>Hobbies 1</label>
-                <select name="tag1">
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Bangalore">Bangalore</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-group col-md-4" style="margin-left:38px">
-                <label>Hobbies 2</label>
-                <select name="tag2">
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Bangalore">Bangalore</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-group col-md-4" style="margin-left:38px">
-                <label>Hobbies 3</label>
-                <select name="tag2">
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Bangalore">Bangalore</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
             <div class="form-group col-md-4" style="margin-top:60px">
                 <button type="submit" class="btn btn-success" style="margin-left:38px">Update</button>
             </div>

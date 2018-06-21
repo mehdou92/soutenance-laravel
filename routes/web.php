@@ -31,3 +31,6 @@ Route::get('/show-profile/{id?}', function ($id) {
 
 Route::get('/show-profile/{id?}', 'UserController@showProfile');
 
+//Route::get('register', 'auth\registerController@showTags');
+
+Route::get('user', 'UserController@index');

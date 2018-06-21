@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
 use App\Models\User;
@@ -9,6 +10,12 @@ use App\Models\User;
 
 class UserController extends Controller
 {
+
+    public function index() {
+        $tags = DB::table('tags')->select('name')->get();
+
+        return view('user.index', ['tags' => $tags]);
+    }
 
     public function list() {
         //$users = \App\Models\User::all();
@@ -36,7 +43,6 @@ class UserController extends Controller
         $user -> tag3 = $request->get('tag3');
         $user -> save();
         return redirect('users');
-
 
     }
 
