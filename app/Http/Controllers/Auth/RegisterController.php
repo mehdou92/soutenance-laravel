@@ -39,7 +39,6 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $tag = Tag::all();
         $this->middleware('guest');
     }
 

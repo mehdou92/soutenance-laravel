@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/edit-info-user', 'UserController@update');
 
-Route::get('/user-list', 'UserController@list');
+Route::get('user-list', 'UserController@list');
 
 Route::get('/user-edit/{id}', 'UserController@edit');
 

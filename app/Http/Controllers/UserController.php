@@ -18,9 +18,7 @@ class UserController extends Controller
     }
 
     public function list() {
-        //$users = \App\Models\User::all();
         $users = User::all();
-        //return view('list', compact('users'));
         return view('list', ['users' => $users]);
     }
 
@@ -44,18 +42,5 @@ class UserController extends Controller
         $user -> save();
         return redirect('users');
 
-    }
-
-    /**
-     * Show the profile for the given user.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function showProfile($id)
-    {
-        $user = Redis::get('user:profile:'.$id);
-
-        return view('profile', ['user' => $user]);
     }
 }
